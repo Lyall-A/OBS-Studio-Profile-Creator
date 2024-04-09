@@ -1,0 +1,182 @@
+{
+    "720p 30 4 Mbps H264": {
+        "basic": {
+            "Video": {
+                "OutputCX": "1280",
+                "OutputCY": "720",
+                "FPSCommon": "30"
+            },
+            "AdvOut": {
+                "RecEncoder": "jim_nvenc"
+            }
+        },
+        "recordEncoder": {
+            "bitrate": 4000
+        },
+        "streamEncoder": {
+
+        }
+    },
+    "720p 60 6 Mbps H264": {
+        "basic": {
+            "Video": {
+                "OutputCX": "1280",
+                "OutputCY": "720",
+                "FPSCommon": "60"
+            },
+            "AdvOut": {
+                "RecEncoder": "jim_nvenc"
+            }
+        },
+        "recordEncoder": {
+            "bitrate": 6000
+        },
+        "streamEncoder": {
+
+        }
+    },
+    "1080p 60 15 Mbps H264": {
+        "basic": {
+            "Video": {
+                "OutputCX": "1920",
+                "OutputCY": "1080",
+                "FPSCommon": "60"
+            },
+            "AdvOut": {
+                "RecEncoder": "jim_nvenc"
+            }
+        },
+        "recordEncoder": {
+            "bitrate": 15000
+        },
+        "streamEncoder": {
+
+        }
+    },
+    "1080p 60 30 Mbps H264": {
+        "basic": {
+            "Video": {
+                "OutputCX": "1920",
+                "OutputCY": "1080",
+                "FPSCommon": "60"
+            },
+            "AdvOut": {
+                "RecEncoder": "jim_nvenc"
+            }
+        },
+        "recordEncoder": {
+            "bitrate": 30000
+        },
+        "streamEncoder": {
+
+        }
+    },
+    "1440p 60 30 Mbps H264": {
+        "basic": {
+            "Video": {
+                "OutputCX": "2160",
+                "OutputCY": "1440",
+                "FPSCommon": "60"
+            },
+            "AdvOut": {
+                "RecEncoder": "jim_nvenc"
+            }
+        },
+        "recordEncoder": {
+            "bitrate": 30000
+        },
+        "streamEncoder": {
+
+        }
+    },
+    "1440p 60 50 Mbps H264": {
+        "basic": {
+            "Video": {
+                "OutputCX": "2160",
+                "OutputCY": "1440",
+                "FPSCommon": "60"
+            },
+            "AdvOut": {
+                "RecEncoder": "jim_nvenc"
+            }
+        },
+        "recordEncoder": {
+            "bitrate": 50000
+        },
+        "streamEncoder": {
+
+        }
+    },
+    "4K 60 50 Mbps H264": {
+        "basic": {
+            "Video": {
+                "OutputCX": "3840",
+                "OutputCY": "2160",
+                "FPSCommon": "60"
+            },
+            "AdvOut": {
+                "RecEncoder": "jim_nvenc"
+            }
+        },
+        "recordEncoder": {
+            "bitrate": 50000
+        },
+        "streamEncoder": {
+
+        }
+    },
+    "4K 60 100 Mbps H264": {
+        "basic": {
+            "Video": {
+                "OutputCX": "3840",
+                "OutputCY": "2160",
+                "FPSCommon": "60"
+            },
+            "AdvOut": {
+                "RecEncoder": "jim_nvenc"
+            }
+        },
+        "recordEncoder": {
+            "bitrate": 100000
+        },
+        "streamEncoder": {
+
+        }
+    },
+    "4K 60 50 Mbps H265": {
+        "basic": {
+            "Video": {
+                "OutputCX": "3840",
+                "OutputCY": "2160",
+                "FPSCommon": "60"
+            },
+            "AdvOut": {
+                "RecEncoder": "jim_hevc_nvenc"
+            }
+        },
+        "recordEncoder": {
+            "bitrate": 50000
+        },
+        "streamEncoder": {
+
+        }
+    },
+    "4K 60 100 Mbps H265": {
+        "basic": {
+            "Video": {
+                "OutputCX": "3840",
+                "OutputCY": "2160",
+                "FPSCommon": "60"
+            },
+            "AdvOut": {
+                "RecEncoder": "jim_hevc_nvenc"
+            }
+        },
+        "recordEncoder": {
+            "bitrate": 100000
+        },
+        "streamEncoder": {
+
+        }
+    }
+}
