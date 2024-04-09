@@ -17,7 +17,7 @@ Object.entries(profiles).forEach(([name, settings]) => {
 
     createdProfile.basic.General.Name = name;
     
-    const dirName = name.replace(/ /g, "_");
+    const dirName = name.replace(/ /g, "_").replace(/\(|\)|\:|\\|\/|\*|\?|\<|\>|\|/g, "");
     const dirPath = path.join(config.savePath, dirName);
     const basicPath = path.join(dirPath, "basic.ini");
     const recordEncoderPath = path.join(dirPath, "recordEncoder.json");
