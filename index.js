@@ -1,18 +1,22 @@
 const fs = require("fs");
 const path = require("path");
 
-const config = require("./config.json");
+const config = require("./config");
 const profiles = require("./profiles.json");
 
-const basic = parseIni(fs.readFileSync(path.join(config.templateDir, "basic.ini"), "utf-8"));
-const recordEncoder = JSON.parse(fs.readFileSync(path.join(config.templateDir, "recordEncoder.json"), "utf-8"));
-const streamEncoder = JSON.parse(fs.readFileSync(path.join(config.templateDir, "streamEncoder.json"), "utf-8"));
+const basicTemplatePath = path.join(config.templateDir, "basic.ini");
+const recordEncoderTemplatePath = path.join(config.templateDir, "streamEncoder.json");
+const streamEncoderTemplatePath = path.join(config.templateDir, "streamEncoder.json");
+
+const basicTemplate = parseIni(fs.readFileSync(basicTemplatePath, "utf-8"));
+const recordEncoderTemplate = JSON.parse(fs.existsSync(recordEncoderTemplatePath) ? fs.readFileSync(recordEncoderTemplatePath, "utf-8") : "{}");
+const streamEncoderTemplate = JSON.parse(fs.existsSync(streamEncoderTemplatePath) ? fs.readFileSync(streamEncoderTemplatePath, "utf-8") : "{}");
 
 Object.entries(profiles).forEach(([name, settings]) => {
     const createdProfile = {
-        basic: replace(basic, settings.basic || { }),
-        recordEncoder: replace(recordEncoder, settings.recordEncoder || { }),
-        streamEncoder: replace(streamEncoder, settings.streamEncoder || { })
+        basic: replace(basicTemplate, settings.basic || { }),
+        recordEncoder: replace(recordEncoderTemplate, settings.recordEncoder || { }),
+        streamEncoder: replace(streamEncoderTemplate, settings.streamEncoder || { })
     }
 
     createdProfile.basic.General.Name = name;
