@@ -253,5 +253,79 @@
         "streamEncoder": {
 
         }
+    },
+
+
+    "720p 30 4 Mbps 9:16 H264": {
+        "basic": {
+            "Video": {
+                "OutputCX": "720",
+                "OutputCY": "1280",
+                "FPSCommon": "30"
+            },
+            "AdvOut": {
+                "RecEncoder": "jim_nvenc"
+            }
+        },
+        "recordEncoder": {
+            "bitrate": 4000
+        },
+        "streamEncoder": {
+
+        }
+    },
+    "720p 60 6 Mbps 9:16 H264": {
+        "basic": {
+            "Video": {
+                "OutputCX": "720",
+                "OutputCY": "1280",
+                "FPSCommon": "60"
+            },
+            "AdvOut": {
+                "RecEncoder": "jim_nvenc"
+            }
+        },
+        "recordEncoder": {
+            "bitrate": 6000
+        },
+        "streamEncoder": {
+
+        }
+    },
+    "1080p 60 30 Mbps 9:16 H264": {
+        "basic": {
+            "Video": {
+                "OutputCX": "1080",
+                "OutputCY": "1920",
+                "FPSCommon": "60"
+            },
+            "AdvOut": {
+                "RecEncoder": "jim_nvenc"
+            }
+        },
+        "recordEncoder": {
+            "bitrate": 30000
+        },
+        "streamEncoder": {
+
+        }
+    },
+    "1440p 60 50 Mbps 9:16 H264": {
+        "basic": {
+            "Video": {
+                "OutputCX": "1440",
+                "OutputCY": "2560",
+                "FPSCommon": "60"
+            },
+            "AdvOut": {
+                "RecEncoder": "jim_nvenc"
+            }
+        },
+        "recordEncoder": {
+            "bitrate": 50000
+        },
+        "streamEncoder": {
+
+        }
     }
 }
